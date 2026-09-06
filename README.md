@@ -14,7 +14,7 @@ Requires macOS 13 or later. Includes Apple silicon and Intel support. Display fe
 
 ## Updates
 
-Install **1.3.0 or later manually once** to enable built-in updates. After that, click **Check for Updates** beside the version in Lumen. Available updates are downloaded, cryptographically verified, and installed from the app.
+Install **1.3.1 or later manually once** to enable built-in updates. After that, click **Check for Updates** beside the version in Lumen. Available updates are downloaded, cryptographically verified, and installed from the app.
 
 No GitHub account or sign-in is needed. This repository contains public downloads and documentation only; Lumen's source repository is private. Update manifests and app archives are signed, and Lumen verifies them before installation.
 
