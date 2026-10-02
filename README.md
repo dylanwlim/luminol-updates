@@ -16,17 +16,17 @@ Requires macOS 13 or later. Includes Apple silicon and Intel support. Display fe
 
 The Cursor tab controls cursor fill, border, and size. Changes affect the macOS pointer and remain after Lumen quits. Use **Reset cursor** to restore the default colors and size before uninstalling when needed. Apps that draw their own cursor may not follow these settings.
 
-Lumen's optional cursor controls require Full Disk Access. That permission grants broad local file access; brightness controls do not require it. You can leave the permission off and use **Pointer Settings** instead. Unsupported pointer APIs disable the in-app controls without disabling brightness. The Read Me included in the DMG describes tested hardware and macOS coverage.
+Lumen's optional cursor controls require Full Disk Access. That permission grants broad local file access; brightness controls do not require it. You can leave the permission off and use **Pointer Settings** instead. If cursor controls are unavailable on your Mac, brightness controls remain usable. The Read Me included in the DMG describes tested hardware and macOS coverage.
 
 ## Updates
 
 Install the **latest published release manually once**, then use **Check for Updates** beside the version or in the sun menu. Built-in updates are supported from 1.3.1 onward; 1.3.1 is the compatibility threshold, not the version to prefer over a newer release.
 
-Update metadata and archives are cryptographically signed and verified before installation. Checks happen when requested, not continuously. No GitHub account or sign-in is needed. Keep the app in Applications with permission to replace it; do not edit files inside the app.
+Checks happen when requested, not continuously. No GitHub account or sign-in is needed. Keep the app in Applications with permission to replace it; do not edit files inside the app.
 
 ## Privacy and support
 
-Preferences stay on your Mac. Lumen has no telemetry. An update check contacts GitHub, which receives ordinary connection information; display preferences are not sent. This repository contains public downloads and documentation only. The application source and signing credentials remain private.
+Preferences stay on your Mac. Lumen has no telemetry. An update check contacts GitHub, which receives ordinary connection information; display preferences are not sent.
 
 The DMG's included Read Me contains the full control, restoration, recovery, and removal instructions. Describe the app version, macOS version, hardware, and reproducible behavior when reporting a problem; do not upload private logs, signing material, or personal files.
 
