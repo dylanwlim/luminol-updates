@@ -50,7 +50,7 @@ For a quick brightness reset, use **Control + Option + Command + 0** or choose *
 
 Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
 
-Preferences stay on your Mac. Update checks contact GitHub. The Read Me included with the download has additional setup and recovery guidance.
+Preferences stay on your Mac. The Read Me included with the download has additional setup and recovery guidance.
 
 [Report a problem](mailto:dylan@wlim.work) with your app version, macOS version, Mac or display model, and steps to repeat it. Remove personal information from screenshots.
 
