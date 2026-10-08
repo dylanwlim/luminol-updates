@@ -1,41 +1,57 @@
 # Luminol
 
-Luminol is the new name of Lumen. The latest available download is still **Lumen 1.4.0 (build 7)**, published September 25, 2026. The Luminol app branding and Keep Awake features are being prepared for a future release and are not included in that download. Existing published binaries, checksums and signatures are unchanged.
+Brightness and cursor controls for Mac.
 
-Simple brightness and cursor controls for your Mac: normal brightness, extra dimming, experimental XDR brightness boost on supported displays, and optional system cursor color, border, and size controls.
+**[Download for macOS](https://github.com/dylanwlim/lumen-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/lumen-updates/releases) · [Get help](mailto:dylan@wlim.work)
 
-[Download the current release (Lumen 1.4.0)](https://github.com/dylanwlim/lumen-updates/releases/latest)
+Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-## Install the current release
+> The current download is **Lumen 1.4.0**. The app's new name, Luminol, will appear in a future release.
 
-1. Download the `.dmg` from the latest release and open it.
-2. Quit any older Lumen copy from its sun menu, then drag Lumen into Applications, replacing the old copy.
-3. Open Lumen from Applications. Current builds are ad-hoc signed, not Apple Developer ID signed or notarized. If macOS blocks the app, use **System Settings > Privacy & Security > Open Anyway** after your first launch attempt, only for a copy you trust. Do not disable system security protections.
+## Install
 
-Requires macOS 13 or later. Includes Apple silicon and Intel support. Display features vary by Mac and connected screen; the nit count is an estimate, not a measured or guaranteed output.
+1. Download the **.dmg** from the latest release and open it.
+2. Quit any running copy using its sun icon in the menu bar.
+3. Drag **Lumen** into **Applications**, replacing the older copy if prompted.
+4. Open **Lumen** from Applications.
+5. Choose your brightness settings or open the **Cursor** tab.
 
-## Cursor controls
+The current release is not Apple-notarized. If macOS blocks the first launch, follow [Apple's instructions](https://support.apple.com/en-us/102445) for opening a downloaded app you trust. Managed Macs may restrict installation.
 
-The Cursor tab controls cursor fill, border, and size. Changes affect the macOS pointer and remain after Lumen quits. Use **Reset cursor** to restore the default colors and size before uninstalling when needed. Apps that draw their own cursor may not follow these settings.
+## Controls
 
-Lumen's optional cursor controls require Full Disk Access. That permission grants broad local file access; brightness controls do not require it. You can leave the permission off and use **Pointer Settings** instead. If cursor controls are unavailable on your Mac, brightness controls remain usable. The Read Me included in the DMG describes tested hardware and macOS coverage.
+| Control | Use it to |
+| --- | --- |
+| Brightness | Adjust normal display brightness. |
+| Extra dimming | Make the picture darker than the normal minimum. |
+| Extra brightness | Try an experimental brightness boost on supported XDR displays. |
+| Cursor | Change the pointer's fill, border, and size. |
+| Reset | Clear brightness effects and restore the earlier level where available. |
 
-## Name change and compatible updates
+Display support varies. The nit reading is an estimate, and extra brightness may affect color or HDR video. Keep Awake is not included in the current download.
 
-The project is now called Luminol. This repository intentionally keeps its `lumen-updates` address because installed apps trust that exact update channel. Keep the installed app at `/Applications/Lumen.app` or `~/Applications/Lumen.app`; do not manually rename it. A future Luminol release will display the new name while preserving the app’s update identity and existing preferences.
+**Cursor changes remain after quitting.** Use **Reset cursor** to restore the defaults. Cursor controls require optional Full Disk Access, a broad macOS permission. You can use **Pointer Settings** instead; brightness controls do not require that permission.
 
-New disk images will use `Luminol-<version>.dmg`. The update ZIP remains `Lumen-<version>.zip`, containing `Lumen.app`, for compatibility with existing signed clients. The old filename is expected and does not mean you received the wrong app. Until that release is published, the installation and feature instructions here describe Lumen 1.4.0.
+## Keep your settings
 
-## Updates
+Enable **Restore my last settings** to remember your display choices. Enable **Open at login** if you want the app to start when you sign in.
 
-Install the **latest published release manually once**, then use **Check for Updates** beside the version or in the sun menu. Built-in updates are supported from 1.3.1 onward; 1.3.1 is the compatibility threshold, not the version to prefer over a newer release.
+Brightness effects clear when you sleep, lock, or quit. With restoration enabled, your saved settings return when supported.
 
-Checks happen when requested, not continuously. No GitHub account or sign-in is needed. Keep the app in Applications with permission to replace it; do not edit files inside the app.
+## Update
 
-## Privacy and support
+Choose **Check for Updates** beside the version or from the sun menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
 
-Preferences stay on your Mac. Lumen has no telemetry. An update check contacts GitHub, which receives ordinary connection information; display preferences are not sent.
+Keep the app in Applications with its original name. If an older copy cannot update, install the latest download manually once.
 
-The DMG's included Read Me contains the full control, restoration, recovery, and removal instructions. Describe the app version, macOS version, hardware, and reproducible behavior when reporting a problem; do not upload private logs, signing material, or personal files.
+## Help and removal
+
+For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the sun menu. If a display control is unavailable, use macOS Display Settings.
+
+Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
+
+Preferences stay on your Mac. Update checks contact GitHub. The Read Me included with the download has additional setup and recovery guidance.
+
+[Report a problem](mailto:dylan@wlim.work) with your app version, macOS version, Mac or display model, and steps to repeat it. Remove personal information from screenshots.
 
 Made by [Dylan](https://dylanwlim.com).
