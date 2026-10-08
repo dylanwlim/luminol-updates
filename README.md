@@ -2,7 +2,7 @@
 
 Brightness and cursor controls for Mac.
 
-**[Download for macOS](https://github.com/dylanwlim/lumen-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/lumen-updates/releases) · [Get help](mailto:dylan@wlim.work)
+**[Download for macOS](https://github.com/dylanwlim/luminol-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Get help](mailto:dylan@wlim.work)
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
