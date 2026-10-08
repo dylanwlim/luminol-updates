@@ -1,10 +1,12 @@
-# Lumen
+# Luminol
+
+Luminol is the new name of Lumen. The latest available download is still **Lumen 1.4.0 (build 7)**, published September 25, 2026. The Luminol app branding and Keep Awake features are being prepared for a future release and are not included in that download. Existing published binaries, checksums and signatures are unchanged.
 
 Simple brightness and cursor controls for your Mac: normal brightness, extra dimming, experimental XDR brightness boost on supported displays, and optional system cursor color, border, and size controls.
 
-[Download the latest Lumen release](https://github.com/dylanwlim/lumen-updates/releases/latest)
+[Download the current release (Lumen 1.4.0)](https://github.com/dylanwlim/lumen-updates/releases/latest)
 
-## Install
+## Install the current release
 
 1. Download the `.dmg` from the latest release and open it.
 2. Quit any older Lumen copy from its sun menu, then drag Lumen into Applications, replacing the old copy.
@@ -17,6 +19,12 @@ Requires macOS 13 or later. Includes Apple silicon and Intel support. Display fe
 The Cursor tab controls cursor fill, border, and size. Changes affect the macOS pointer and remain after Lumen quits. Use **Reset cursor** to restore the default colors and size before uninstalling when needed. Apps that draw their own cursor may not follow these settings.
 
 Lumen's optional cursor controls require Full Disk Access. That permission grants broad local file access; brightness controls do not require it. You can leave the permission off and use **Pointer Settings** instead. If cursor controls are unavailable on your Mac, brightness controls remain usable. The Read Me included in the DMG describes tested hardware and macOS coverage.
+
+## Name change and compatible updates
+
+The project is now called Luminol. This repository intentionally keeps its `lumen-updates` address because installed apps trust that exact update channel. Keep the installed app at `/Applications/Lumen.app` or `~/Applications/Lumen.app`; do not manually rename it. A future Luminol release will display the new name while preserving the app’s update identity and existing preferences.
+
+New disk images will use `Luminol-<version>.dmg`. The update ZIP remains `Lumen-<version>.zip`, containing `Lumen.app`, for compatibility with existing signed clients. The old filename is expected and does not mean you received the wrong app. Until that release is published, the installation and feature instructions here describe Lumen 1.4.0.
 
 ## Updates
 
