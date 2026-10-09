@@ -6,14 +6,14 @@ Brightness and cursor controls for Mac.
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-> The current download is **Lumen 1.4.0**. The app's new name, Luminol, will appear in a future release.
+> The current public download is **Lumen 1.4.0**, released before the rename. Luminol branding and Keep Awake will appear in a future release.
 
 ## Install
 
 1. Download the **.dmg** from the latest release and open it.
 2. Quit any running copy using its sun icon in the menu bar.
-3. Drag **Lumen** into **Applications**, replacing the older copy if prompted.
-4. Open **Lumen** from Applications.
+3. Drag the app into **Applications**, replacing the older copy if prompted.
+4. Open it from Applications.
 5. Choose your brightness settings or open the **Cursor** tab.
 
 The current release is not Apple-notarized. If macOS blocks the first launch, follow [Apple's instructions](https://support.apple.com/en-us/102445) for opening a downloaded app you trust. Managed Macs may restrict installation.
@@ -28,7 +28,7 @@ The current release is not Apple-notarized. If macOS blocks the first launch, fo
 | Cursor | Change the pointer's fill, border, and size. |
 | Reset | Clear brightness effects and restore the earlier level where available. |
 
-Display support varies. The nit reading is an estimate, and extra brightness may affect color or HDR video. Keep Awake is not included in the current download.
+Display support varies. The nit reading is an estimate, and extra brightness may affect color or HDR video.
 
 **Cursor changes remain after quitting.** Use **Reset cursor** to restore the defaults. Cursor controls require optional Full Disk Access, a broad macOS permission. You can use **Pointer Settings** instead; brightness controls do not require that permission.
 
@@ -42,7 +42,7 @@ Brightness effects clear when you sleep, lock, or quit. With restoration enabled
 
 Choose **Check for Updates** beside the version or from the sun menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
 
-Keep the app in Applications with its original name. If an older copy cannot update, install the latest download manually once.
+Keep the app in Applications with the filename supplied by the download. If an older copy cannot update, install the latest download manually once.
 
 ## Help and removal
 
