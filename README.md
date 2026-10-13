@@ -1,5 +1,7 @@
 # Luminol
 
+<img src="assets/LuminolLogo.png" alt="Luminol" width="420">
+
 Brightness and cursor controls for Mac.
 
 **[Download for macOS](https://github.com/dylanwlim/luminol-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Get help](mailto:dylan@wlim.work)
@@ -11,7 +13,7 @@ Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 ## Install
 
 1. Download the **.dmg** from the latest release and open it.
-2. Quit any running copy using its sun icon in the menu bar.
+2. Quit any running copy using its Luminol menu bar icon (a sun in the older Lumen release).
 3. Drag the app into **Applications**, replacing the older copy if prompted.
 4. Open it from Applications.
 5. Choose your brightness settings or open the **Cursor** tab.
@@ -40,13 +42,13 @@ Brightness effects clear when you sleep, lock, or quit. With restoration enabled
 
 ## Update
 
-Choose **Check for Updates** beside the version or from the sun menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
+Choose **Check for Updates** beside the version or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
 
 Keep the app in Applications with the filename supplied by the download. If an older copy cannot update, install the latest download manually once.
 
 ## Help and removal
 
-For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the sun menu. If a display control is unavailable, use macOS Display Settings.
+For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the app's menu bar menu. If a display control is unavailable, use macOS Display Settings.
 
 Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
 
