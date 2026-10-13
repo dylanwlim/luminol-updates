@@ -8,7 +8,7 @@ Brightness, cursor and Keep Awake controls for Mac.
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-**Luminol 1.5.0** repairs the menu brightness and extra-dimming controls, includes the new Luminol artwork, and adds Keep Awake with closed-lid support.
+**Luminol 1.5.1** repairs the menu brightness and extra-dimming controls, includes the new Luminol artwork, adds Keep Awake with closed-lid support, and corrects the signed updater.
 
 ## Install
 
@@ -51,6 +51,8 @@ Avoid running multiple sleep-control apps together. Battery protection ends sess
 ## Update
 
 Choose **Check for Updates** beside the version or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
+
+**If you use the development-signed 1.5.0 release or an earlier preview, install the 1.5.1 DMG manually once.** Those copies cannot reliably start the updater. Version 1.5.1 includes the fix for later automatic updates.
 
 Keep the app in Applications with the filename supplied by the download. If an older copy cannot update, install the latest download manually once.
 
