@@ -2,13 +2,13 @@
 
 <img src="assets/LuminolLogo.png" alt="Luminol" width="420">
 
-Brightness and cursor controls for Mac.
+Brightness, cursor and Keep Awake controls for Mac.
 
 **[Download for macOS](https://github.com/dylanwlim/luminol-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Get help](mailto:dylan@wlim.work)
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-> The current public download is **Lumen 1.4.0**, released before the rename. Luminol branding and Keep Awake will appear in a future release.
+**Luminol 1.5.0** repairs the menu brightness and extra-dimming controls, includes the new Luminol artwork, and adds Keep Awake with closed-lid support.
 
 ## Install
 
@@ -18,7 +18,7 @@ Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 4. Open it from Applications.
 5. Choose your brightness settings or open the **Cursor** tab.
 
-The current release is not Apple-notarized. If macOS blocks the first launch, follow [Apple's instructions](https://support.apple.com/en-us/102445) for opening a downloaded app you trust. Managed Macs may restrict installation.
+This release is Apple Development signed and is not notarized. Developer ID signing is pending. If macOS blocks the first launch, follow [Apple's instructions](https://support.apple.com/en-us/102445) for opening a downloaded app you trust using **Open Anyway**. Keep download quarantine and macOS security settings enabled. Managed Macs may restrict installation.
 
 ## Controls
 
@@ -40,6 +40,14 @@ Enable **Restore my last settings** to remember your display choices. Enable **O
 
 Brightness effects clear when you sleep, lock, or quit. With restoration enabled, your saved settings return when supported.
 
+## Keep Awake
+
+Open the Luminol star menu to choose a duration, end time, indefinite session, or a session that ends when a selected app quits. **More > Open Luminol Window** opens the optional window. Right-click the star to start your saved duration or end the current session. Sessions end when you quit and do not resume on relaunch.
+
+Closed-lid support is included. Follow setup in Awake settings and approve the helper in **System Settings > General > Login Items** when requested. Use it only when Awake settings reports ready. Development signing may restrict helper approval on other Macs. Physical lid-close operation on a fresh recipient Mac remains experimental and unverified; the built-in display turns off when closed, and external-display behavior depends on your setup.
+
+Avoid running multiple sleep-control apps together. Battery protection ends sessions below 15% by default; high temperatures may warn or end a session. Automatic locking on lid closure may request Accessibility access and can be turned off.
+
 ## Update
 
 Choose **Check for Updates** beside the version or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
@@ -50,7 +58,7 @@ Keep the app in Applications with the filename supplied by the download. If an o
 
 For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the app's menu bar menu. If a display control is unavailable, use macOS Display Settings.
 
-Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
+Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. End any awake session and remove closed-lid support in Awake settings. Quit the app, then delete it from Applications.
 
 Preferences stay on your Mac. The Read Me included with the download has additional setup and recovery guidance.
 
