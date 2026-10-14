@@ -2,13 +2,13 @@
 
 <img src="assets/LuminolLogo.png" alt="Luminol" width="420">
 
-Brightness, cursor and Keep Awake controls for Mac.
+Brightness and cursor controls for Mac.
 
 **[Download for macOS](https://github.com/dylanwlim/luminol-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Get help](mailto:dylan@wlim.work)
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-**Luminol 1.5.1** repairs the menu brightness and extra-dimming controls, includes the new Luminol artwork, adds Keep Awake with closed-lid support, and corrects the signed updater.
+**Luminol 1.5.2** adds a native app window with Brightness, Cursor, and About icon tabs, compact sizing, and aligned settings rows. Keep Awake and its closed-lid helper are removed pending Developer ID signing. Brightness and cursor controls retain the 1.5.1 fixes.
 
 ## Install
 
@@ -40,19 +40,17 @@ Enable **Restore my last settings** to remember your display choices. Enable **O
 
 Brightness effects clear when you sleep, lock, or quit. With restoration enabled, your saved settings return when supported.
 
-## Keep Awake
+## App window
 
-Open the Luminol star menu to choose a duration, end time, indefinite session, or a session that ends when a selected app quits. **More > Open Luminol Window** opens the optional window. Right-click the star to start your saved duration or end the current session. Sessions end when you quit and do not resume on relaunch.
+Choose **More > Open Luminol Window** from the star menu to open the app window. Use the icon tabs for **Brightness**, **Cursor**, and **About**.
 
-Closed-lid support is included. Follow setup in Awake settings and approve the helper in **System Settings > General > Login Items** when requested. Use it only when Awake settings reports ready. Development signing may restrict helper approval on other Macs. Physical lid-close operation on a fresh recipient Mac remains experimental and unverified; the built-in display turns off when closed, and external-display behavior depends on your setup.
-
-Avoid running multiple sleep-control apps together. Battery protection ends sessions below 15% by default; high temperatures may warn or end a session. Automatic locking on lid closure may request Accessibility access and can be turned off.
+Keep Awake is unavailable until Developer ID signing is available. This release includes no closed-lid helper.
 
 ## Update
 
-Choose **Check for Updates** beside the version or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
+Choose **Check for Updates** in About or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
 
-**If you use the development-signed 1.5.0 release or an earlier preview, install the 1.5.1 DMG manually once.** Those copies cannot reliably start the updater. Version 1.5.1 includes the fix for later automatic updates.
+**If you use the development-signed 1.5.0 release or an earlier preview, install the latest DMG manually once.** Those copies cannot reliably start the updater. Version 1.5.1 includes the fix for later automatic updates.
 
 Keep the app in Applications with the filename supplied by the download. If an older copy cannot update, install the latest download manually once.
 
@@ -60,7 +58,7 @@ Keep the app in Applications with the filename supplied by the download. If an o
 
 For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the app's menu bar menu. If a display control is unavailable, use macOS Display Settings.
 
-Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. End any awake session and remove closed-lid support in Awake settings. Quit the app, then delete it from Applications.
+Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
 
 Preferences stay on your Mac. The Read Me included with the download has additional setup and recovery guidance.
 
