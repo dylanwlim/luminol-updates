@@ -8,7 +8,7 @@ Brightness and cursor controls for Mac.
 
 Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
 
-**Luminol 1.5.3** improves settings layout and scrolling, keeps cursor permission and error guidance visible, and fixes slider accessibility and menu status updates. Brightness, Cursor, and About remain in the native settings window. Keep Awake and its closed-lid helper remain unavailable pending Developer ID signing.
+**Luminol 1.5.4** fixes settings recovery, brightness restoration, cursor readback, updater reliability, menu scrolling, and reopening settings. Brightness, Cursor, and About remain in the native settings window. Keep Awake and its closed-lid helper remain unavailable pending Developer ID signing.
 
 ## Install
 
