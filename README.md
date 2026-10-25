@@ -65,5 +65,3 @@ Preferences stay on your Mac. The Read Me included with the download has additio
 [Report a problem](mailto:dylan@wlim.work) with your app version, macOS version, Mac or display model, and steps to repeat it. Remove personal information from screenshots.
 
 Made by [Dylan](https://dylanwlim.com).
-
-Need a fast website or Mac app? Free quote: https://dylanwlim.com/hire
