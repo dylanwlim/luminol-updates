@@ -2,66 +2,70 @@
 
 <img src="assets/LuminolLogo.png" alt="Luminol" width="420">
 
-Brightness and cursor controls for Mac.
+Native display, pointer and click controls for Mac.
 
-**[Download for macOS](https://github.com/dylanwlim/luminol-updates/releases/latest)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Get help](mailto:dylan@wlim.work)
+**[Download 1.6.0 unsigned public preview](https://github.com/dylanwlim/luminol-updates/releases/tag/v1.6.0)** · [Stable 1.5.4 download](https://github.com/dylanwlim/luminol-updates/releases/latest) · [All releases](https://github.com/dylanwlim/luminol-updates/releases)
 
-Requires macOS 13 or later. Supports Apple silicon and Intel Macs.
+## 1.6.0 public preview
 
-**Luminol 1.5.4** fixes settings recovery, brightness restoration, cursor readback, updater reliability, menu scrolling, and reopening settings. Brightness, Cursor, and About remain in the native settings window. Keep Awake and its closed-lid helper remain unavailable pending Developer ID signing.
+Build 17 is a **manual-download prerelease without an Apple-issued signing certificate or notarization**. It has an ad-hoc integrity seal, which is not Apple developer trust. macOS may block or refuse launch. Fresh-recipient acceptance and Intel runtime have not been verified. The existing signed automatic-update channel remains on 1.5.4.
+
+Requires macOS 13 or later. The application contains Apple silicon and Intel binaries. No account, advertising, telemetry or subscription is required by Luminol.
+
+### What’s new
+
+- A Cursor autoclicker with a three-second start delay, a saved interval from 20 to 3,600,000 ms, and a customizable saved start/stop shortcut. F6 is the default; some keyboards require Fn–F6.
+- A live menu header showing applied extra-brightness and dimming percentages, customized pointer size and colors, and the autoclicker’s active state and interval. It identifies multiple displays, wraps longer combinations and omits inactive/default settings—including an off autoclicker. Header resizing waits until slider drags end.
+- Native settings with Brightness, Cursor and About tabs, compact controls, direct Settings and Updates menu actions, and clearer permission/error guidance.
+- Exclusive shortcut registration, one toggle per press, and fixes for shortcut recording and recovery.
 
 ## Install
 
-1. Download the **.dmg** from the latest release and open it.
-2. Quit any running copy using its Luminol menu bar icon (a sun in the older Lumen release).
-3. Drag the app into **Applications**, replacing the older copy if prompted.
-4. Open it from Applications.
-5. Choose your brightness settings or open the **Cursor** tab.
+1. Download **Luminol-1.6.0.dmg** from the preview release (or the ZIP).
+2. Quit any older Luminol/Lumen copy using its menu bar menu.
+3. Drag **Luminol.app** into **Applications**, then open it there. Preserve the supplied app filename.
+4. Choose settings from the star menu. Existing preferences are retained.
 
-This release is Apple Development signed and is not notarized. Developer ID signing is pending. If macOS blocks the first launch, follow [Apple's instructions](https://support.apple.com/en-us/102445) for opening a downloaded app you trust using **Open Anyway**. Keep download quarantine and macOS security settings enabled. Managed Macs may restrict installation.
+If macOS offers **Open Anyway** for an app you trust, follow [Apple’s documented steps](https://support.apple.com/en-us/102445). Keep Gatekeeper and download quarantine enabled. Some Macs, including managed devices, may refuse this unsigned preview. The included SHA-256 checksums verify integrity, not Apple trust.
 
-## Controls
+Stable 1.5.4 is Apple Development signed but is also not notarized. A Developer ID-signed/notarized release is still pending.
 
-| Control | Use it to |
-| --- | --- |
-| Brightness | Adjust normal display brightness. |
-| Extra dimming | Make the picture darker than the normal minimum. |
-| Extra brightness | Try an experimental brightness boost on supported XDR displays. |
-| Cursor | Change the pointer's fill, border, and size. |
-| Reset | Clear brightness effects and restore the earlier level where available. |
+## Controls and permissions
 
-Display support varies. The nit reading is an estimate, and extra brightness may affect color or HDR video.
+| Control | Behavior | Permission |
+| --- | --- | --- |
+| Brightness | Changes the normal display brightness. Normal keyboard brightness keys remain available. | No click-control or Full Disk Access permission required. |
+| Extra dimming | Darkens the picture below the normal minimum. | None of the above. |
+| Extra brightness | Experimental XDR boost on supported built-in displays; macOS and hardware limit output. | None of the above. |
+| Pointer appearance | Changes fill, border and size. Changes persist after quitting; Reset cursor restores defaults. | Optional **Full Disk Access**, a broad permission. Use Pointer Settings instead if you prefer. |
+| Autoclicker (1.6 preview) | Left-clicks at the system pointer after a delay. Interval and shortcut are remembered; running state is never restored. | **Accessibility**, called **Device Control and Data Access** on newer macOS. |
 
-**Cursor changes remain after quitting.** Use **Reset cursor** to restore the defaults. Cursor controls require optional Full Disk Access, a broad macOS permission. You can use **Pointer Settings** instead; brightness controls do not require that permission.
+Approve the installed app, then quit and reopen when macOS requests it. Ad-hoc replacement builds may require permissions to be approved again. Pointer appearance and click control use separate permissions.
 
-## Keep your settings
+Clicking pauses while Luminol is active, its menus are open, or a mouse button is held. Sleep, lock, permission loss and quit stop it; wake never restarts it. Use the selected shortcut or the switch to stop. Reserved shortcuts may be unavailable. Timing is best effort when macOS is busy.
 
-Enable **Restore my last settings** to remember your display choices. Enable **Open at login** if you want the app to start when you sign in.
+Display support varies. Nit values are estimates, not light-meter measurements. Extra brightness can affect color/HDR video and power use. Keep Awake and its privileged helper are not included.
 
-Brightness effects clear when you sleep, lock, or quit. With restoration enabled, your saved settings return when supported.
+## Settings and recovery
 
-## App window
+Choose **Settings…** directly from the star menu. In Brightness, **Restore my last settings** remembers display choices; **Open at login** starts the app after sign-in and may need Login Items approval. These are separate options.
 
-Choose **More > Open Luminol Window** from the star menu to open the app window. Use the icon tabs for **Brightness**, **Cursor**, and **About**.
+Brightness effects clear on sleep, lock and quit. Saved effects return only when restoration is enabled. After an interrupted session, automatic restoration is paused until you explicitly choose settings again.
 
-Keep Awake is unavailable until Developer ID signing is available. This release includes no closed-lid helper.
+Use **Reset** or **Control + Option + Command + 0** (top-row zero) to clear brightness effects and restore the earlier level where available. Pointer reset is separate. macOS Display Settings and Pointer Settings remain available as fallbacks.
 
-## Update
+## Updates
 
-Choose **Check for Updates** in About or from the app's menu bar menu. If an update is available, choose **Install & Relaunch**, or postpone it until later.
+This unsigned preview is **manual installation only**. It is not marked latest stable and has no automatic-update manifests. **Check for Updates** continues to use the existing signed stable channel. A future signed release will use a new version/build; a manual installation may be needed when changing signing identities.
 
-**If you use the development-signed 1.5.0 release or an earlier preview, install the latest DMG manually once.** Those copies cannot reliably start the updater. Version 1.5.1 includes the fix for later automatic updates.
+Users of development-signed 1.5.0 or earlier previews need a manual stable DMG installation once to obtain the corrected updater. Published historical releases are never replaced.
 
-Keep the app in Applications with the filename supplied by the download. If an older copy cannot update, install the latest download manually once.
+## Privacy, help and removal
 
-## Help and removal
+Preferences stay on your Mac. Update checks contact GitHub only when requested; no display preferences or identities are sent. The app includes no privileged daemon. The bundled Read Me contains additional setup and recovery details.
 
-For a quick brightness reset, use **Control + Option + Command + 0** or choose **Reset** from the app's menu bar menu. If a display control is unavailable, use macOS Display Settings.
+To remove Luminol, reset the cursor if desired, turn off Open at login and Restore my last settings, quit, and delete the app from Applications.
 
-Before uninstalling, use **Reset cursor** if you want the default pointer, turn off **Open at login**, and turn off **Restore my last settings**. Quit the app, then delete it from Applications.
+[Report an issue](mailto:dylan@wlim.work) with the app/macOS versions, Mac or display model, and reproduction steps. Remove personal information from screenshots.
 
-Preferences stay on your Mac. The Read Me included with the download has additional setup and recovery guidance.
-
-[Report a problem](mailto:dylan@wlim.work) with your app version, macOS version, Mac or display model, and steps to repeat it. Remove personal information from screenshots.
-
-Made by [Dylan](https://dylanwlim.com).
+Made by [Dylan](https://dylanwlim.com). MIT licensed. This public repository hosts downloads and documentation; application source remains private.
