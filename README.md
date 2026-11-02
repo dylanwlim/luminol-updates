@@ -56,7 +56,7 @@ Use **Reset** or **Control + Option + Command + 0** (top-row zero) to clear brig
 
 ## Updates
 
-This unsigned preview is **manual installation only**. It is not marked latest stable and has no automatic-update manifests. **Check for Updates** continues to use the existing signed stable channel. A future signed release will use a new version/build; a manual installation may be needed when changing signing identities.
+This unsigned preview is **manual installation only**. It is not marked latest stable and has no automatic-update manifests. **Check for Updates** continues to use the existing signed stable channel on **1.5.4**; it does **not** offer or install this 1.6 preview. An older installation can therefore report that it is up to date even though the manual preview is available. To get build 17, use the preview download and installation steps above. Preferences are retained, but macOS may require renewed pointer and click-control approvals for the replacement app. A future signed release will use a new version/build; a manual installation may be needed when changing signing identities.
 
 Users of development-signed 1.5.0 or earlier previews need a manual stable DMG installation once to obtain the corrected updater. Published historical releases are never replaced.
 
