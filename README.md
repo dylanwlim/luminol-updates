@@ -4,17 +4,24 @@
 
 Native display, pointer and click controls for Mac.
 
-**[Download 1.6.1 — one-time update setup](https://github.com/dylanwlim/luminol-updates/releases/tag/v1.6.1)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Historical stable 1.5.4](https://github.com/dylanwlim/luminol-updates/releases/latest)
+**[Download Luminol 1.6.2](https://github.com/dylanwlim/luminol-updates/releases/tag/v1.6.2)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Historical stable 1.5.4](https://github.com/dylanwlim/luminol-updates/releases/latest)
 
 ## Install once to enable future updates
 
-**Users of every version through 1.6.0 must install 1.6.1 build 18 manually once.** The original update-signing key is unavailable. This version adopts a replacement pinned Ed25519 key and the separate v2 channel. After that installation, **Check for Updates** can verify and install later higher-build releases from that channel. Preferences are retained. Older apps cannot automatically trust the replacement key.
+**Users of every version through 1.6.0 must manually install 1.6.1 or later once. The current download is 1.6.2 build 19. Already using 1.6.1? Choose Check for Updates.** The original update-signing key is unavailable. This version adopts a replacement pinned Ed25519 key and the separate v2 channel. After that installation, **Check for Updates** can verify and install later higher-build releases from that channel. Preferences are retained. Older apps cannot automatically trust the replacement key.
 
-The app has an ad-hoc hardened integrity seal but **no Apple-issued signing identity or notarization**. Update signatures are separate from Apple trust: macOS may block launch or require renewed permission approval after ad-hoc replacements. Fresh-recipient acceptance and physical Intel runtime are not verified. The original latest-release channel remains on historical 1.5.4; use the 1.6.1 link above.
+The app has an ad-hoc hardened integrity seal but **no Apple-issued signing identity or notarization**. Update signatures are separate from Apple trust: macOS may block launch or require renewed permission approval after ad-hoc replacements. Fresh-recipient acceptance and physical Intel runtime are not verified. The original latest-release channel remains on historical 1.5.4; use the current download link above.
 
 Requires macOS 13 or later. The application contains Apple silicon and Intel binaries. No account, advertising, telemetry or subscription is required by Luminol.
 
-### What’s new
+### What’s new in 1.6.2
+
+- Command-comma opens Settings, Command-W closes the front window, and standard Edit shortcuts work in text fields. About shows both version and build.
+- Autoclicker pause and permission-loss feedback updates promptly even with long intervals, without sending early clicks or skipping the start delay.
+- Less repeated display polling, cleaner inactive accessibility state, stricter update-download checks, and safer recovery from an interrupted release.
+- Uses the same v2 update-signing key as 1.6.1. Existing v2 users can update normally; no new manual trust transition is needed.
+
+### Included controls
 
 - A Cursor autoclicker with a three-second start delay, a saved interval from 20 to 3,600,000 ms, and a customizable saved start/stop shortcut. F6 is the default; some keyboards require Fn–F6.
 - A live menu header showing applied extra-brightness and dimming percentages, customized pointer size and colors, and the autoclicker’s active state and interval. It identifies multiple displays, wraps longer combinations and omits inactive/default settings—including an off autoclicker. Header resizing waits until slider drags end.
@@ -23,7 +30,7 @@ Requires macOS 13 or later. The application contains Apple silicon and Intel bin
 
 ## Install
 
-1. Download **Luminol-1.6.1.dmg** from the 1.6.1 release (or the ZIP).
+1. Download **Luminol-1.6.2.dmg** from the 1.6.2 release (or the ZIP).
 2. Quit any older Luminol/Lumen copy using its menu bar menu.
 3. Drag **Luminol.app** into **Applications**, then open it there. Preserve the supplied app filename.
 4. Choose settings from the star menu. Existing preferences are retained.
