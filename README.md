@@ -4,11 +4,13 @@
 
 Native display, pointer and click controls for Mac.
 
-**[Download 1.6.0 unsigned public preview](https://github.com/dylanwlim/luminol-updates/releases/tag/v1.6.0)** · [Stable 1.5.4 download](https://github.com/dylanwlim/luminol-updates/releases/latest) · [All releases](https://github.com/dylanwlim/luminol-updates/releases)
+**[Download 1.6.1 — one-time update setup](https://github.com/dylanwlim/luminol-updates/releases/tag/v1.6.1)** · [All releases](https://github.com/dylanwlim/luminol-updates/releases) · [Historical stable 1.5.4](https://github.com/dylanwlim/luminol-updates/releases/latest)
 
-## 1.6.0 public preview
+## Install once to enable future updates
 
-Build 17 is a **manual-download prerelease without an Apple-issued signing certificate or notarization**. It has an ad-hoc integrity seal, which is not Apple developer trust. macOS may block or refuse launch. Fresh-recipient acceptance and Intel runtime have not been verified. The existing signed automatic-update channel remains on 1.5.4.
+**Users of every version through 1.6.0 must install 1.6.1 build 18 manually once.** The original update-signing key is unavailable. This version adopts a replacement pinned Ed25519 key and the separate v2 channel. After that installation, **Check for Updates** can verify and install later higher-build releases from that channel. Preferences are retained. Older apps cannot automatically trust the replacement key.
+
+The app has an ad-hoc hardened integrity seal but **no Apple-issued signing identity or notarization**. Update signatures are separate from Apple trust: macOS may block launch or require renewed permission approval after ad-hoc replacements. Fresh-recipient acceptance and physical Intel runtime are not verified. The original latest-release channel remains on historical 1.5.4; use the 1.6.1 link above.
 
 Requires macOS 13 or later. The application contains Apple silicon and Intel binaries. No account, advertising, telemetry or subscription is required by Luminol.
 
@@ -21,12 +23,12 @@ Requires macOS 13 or later. The application contains Apple silicon and Intel bin
 
 ## Install
 
-1. Download **Luminol-1.6.0.dmg** from the preview release (or the ZIP).
+1. Download **Luminol-1.6.1.dmg** from the 1.6.1 release (or the ZIP).
 2. Quit any older Luminol/Lumen copy using its menu bar menu.
 3. Drag **Luminol.app** into **Applications**, then open it there. Preserve the supplied app filename.
 4. Choose settings from the star menu. Existing preferences are retained.
 
-If macOS offers **Open Anyway** for an app you trust, follow [Apple’s documented steps](https://support.apple.com/en-us/102445). Keep Gatekeeper and download quarantine enabled. Some Macs, including managed devices, may refuse this unsigned preview. The included SHA-256 checksums verify integrity, not Apple trust.
+If macOS offers **Open Anyway** for an app you trust, follow [Apple’s documented steps](https://support.apple.com/en-us/102445). Keep Gatekeeper and download quarantine enabled. Some Macs, including managed devices, may refuse this unsigned release. The included SHA-256 checksums verify integrity, not Apple trust.
 
 Stable 1.5.4 is Apple Development signed but is also not notarized. A Developer ID-signed/notarized release is still pending.
 
@@ -38,7 +40,7 @@ Stable 1.5.4 is Apple Development signed but is also not notarized. A Developer 
 | Extra dimming | Darkens the picture below the normal minimum. | None of the above. |
 | Extra brightness | Experimental XDR boost on supported built-in displays; macOS and hardware limit output. | None of the above. |
 | Pointer appearance | Changes fill, border and size. Changes persist after quitting; Reset cursor restores defaults. | Optional **Full Disk Access**, a broad permission. Use Pointer Settings instead if you prefer. |
-| Autoclicker (1.6 preview) | Left-clicks at the system pointer after a delay. Interval and shortcut are remembered; running state is never restored. | **Accessibility**, called **Device Control and Data Access** on newer macOS. |
+| Autoclicker | Left-clicks at the system pointer after a delay. Interval and shortcut are remembered; running state is never restored. | **Accessibility**, called **Device Control and Data Access** on newer macOS. |
 
 Approve the installed app, then quit and reopen when macOS requests it. Ad-hoc replacement builds may require permissions to be approved again. Pointer appearance and click control use separate permissions.
 
@@ -56,9 +58,14 @@ Use **Reset** or **Control + Option + Command + 0** (top-row zero) to clear brig
 
 ## Updates
 
-This unsigned preview is **manual installation only**. It is not marked latest stable and has no automatic-update manifests. **Check for Updates** continues to use the existing signed stable channel on **1.5.4**; it does **not** offer or install this 1.6 preview. An older installation can therefore report that it is up to date even though the manual preview is available. To get build 17, use the preview download and installation steps above. Preferences are retained, but macOS may require renewed pointer and click-control approvals for the replacement app. A future signed release will use a new version/build; a manual installation may be needed when changing signing identities.
+1. Manually download and install **1.6.1 or later once**, quitting the old copy first. Approve macOS permissions for the exact installed app when required.
+2. For subsequent releases, choose **Check for Updates** from the star menu or About, then **Install & Relaunch** when offered. Display preferences, shortcut and interval are retained; clicking never starts on launch.
 
-Users of development-signed 1.5.0 or earlier previews need a manual stable DMG installation once to obtain the corrected updater. Published historical releases are never replaced.
+Version 1.6.1 uses independently signed manifests in [channels/v2](channels/v2). Both the manifest and exact ZIP must verify against its pinned public key. Only newer builds can install. The public key is `zyovtSprgraUVqtJKL2dEfm2djuTUGHPvzZOUvW/CWI=`; no private key is included. An up-to-date result means no newer build is currently published on that channel. GitHub CDN propagation may briefly delay discovery.
+
+The original `/releases/latest` feeds remain at 1.5.4 for old-key installations. They do not deliver 1.6.1. Historical releases and their assets remain unchanged. The old signing-key loss is why this one manual trust transition is required, including for 1.6.0 users.
+
+**macOS approval remains separate:** an unsigned replacement may need launch approval and renewed click-control/Full Disk Access. Future Apple-signed releases may also require approval when identity changes. Keep Gatekeeper and quarantine enabled; managed Macs may prohibit unsigned software. This channel does not promise unattended acceptance on every Mac.
 
 ## Privacy, help and removal
 
