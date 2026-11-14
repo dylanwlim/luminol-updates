@@ -24,7 +24,7 @@ Requires macOS 13 or later. The application contains Apple silicon and Intel bin
 ### Included controls
 
 - A Cursor autoclicker with a three-second start delay, a saved interval from 20 to 3,600,000 ms, and a customizable saved start/stop shortcut. F6 is the default; some keyboards require Fn–F6.
-- A live menu header showing applied extra-brightness and dimming percentages, customized pointer size and colors, and the autoclicker’s active state and interval. It identifies multiple displays, wraps longer combinations and omits inactive/default settings—including an off autoclicker. Header resizing waits until slider drags end.
+- A live menu header showing applied extra-brightness and dimming percentages, customized pointer size and colors, and the autoclicker’s active state and interval. It identifies multiple displays, wraps longer combinations and omits inactive or default settings, including an off autoclicker. Header resizing waits until slider drags end.
 - Native settings with Brightness, Cursor and About tabs, compact controls, direct Settings and Updates menu actions, and clearer permission/error guidance.
 - Exclusive shortcut registration, one toggle per press, and fixes for shortcut recording and recovery.
 
